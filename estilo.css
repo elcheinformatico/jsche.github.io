@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #23306b,#031544 );
+}
+
+.moon{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #9fb0df;
+    box-shadow: 0 0 20px #fff,
+    inset -50px 0 30px #585858,
+    inset 40px 10px 90px #f6fbfb
+    
+}
+
+.moon span{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.moon span:first-child{
+    border: solid 4px rgba(121, 121, 121, .7);
+    border-right: solid 0px transparent;
+    border-top: solid 0px transparent;
+    left: 20px;
+    top: 50%;
+}
+
+.moon span:nth-child(2){
+    border: solid 4px rgba(121, 121, 121, .7);
+    border-right: solid 0px transparent;
+    border-top: solid 0px transparent;
+    left: 140px;
+    top: 40px;
+}
+
+.moon span:nth-child(3){
+    width: 60px;
+    height: 60px;
+    border: solid 4px rgba(121, 121, 121, .7);
+    border-right: solid 0px transparent;
+    border-top: solid 0px transparent;
+    left: 50%;
+    top: 50%;
+}
+
+.moon span:nth-child(4){
+    background: rgba(121, 121, 121, .7);
+    border-right: solid 0px transparent;
+    border-top: solid 0px transparent;
+    left: 30%;
+    top: 30%;
+}
+
+.moon span:nth-child(5){
+    width: 30px;
+    height: 30px;
+    border: solid 4px rgba(121, 121, 121, .7);
+    border-right: solid 0px transparent;
+    border-bottom: solid 0px transparent;
+    left: 40%;
+    top: 85%;
+}
+
+.moon span:nth-child(6){
+    background: rgba(121, 121, 121, .7);
+    border-right: solid 0px transparent;
+    border-top: solid 0px transparent;
+    left: 70%;
+    top: 25%;
+}
+
+.moon span:nth-child(7){
+    background: rgba(88, 88, 88, .7);
+    border-right: solid 0px transparent;
+    border-top: solid 0px transparent;
+    left: 75%;
+    top: 75%;
+}
