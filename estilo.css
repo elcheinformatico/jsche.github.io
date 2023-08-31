@@ -1,92 +1,289 @@
-*{
-    margin: 0;
+* {
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
 }
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(to right, #23306b,#031544 );
-}
 
-.moon{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: #9fb0df;
-    box-shadow: 0 0 20px #fff,
-    inset -50px 0 30px #585858,
-    inset 40px 10px 90px #f6fbfb
-    
-}
-
-.moon span{
+.Fondo {
     position: absolute;
-    width: 25px;
-    height: 25px;
+    background: #1e1e1e;
+    /* background: -webkit-radial-gradient(center, circle,magenta,
+     #1e1e1e 25%,#1e1e1e,#1e1e1e,#1e1e1e); */
+    width: 100%;
+    height: 100%;
+    /* transition: .5S; */
+}
+
+.caja {
+    position: absolute;
+    width: 60%;
+    height: 40%;
+    left: 20%;
+    /* display:flex;     */
+    top: 30%;
+    text-align: center;
+    border-top: 1px solid white;
+    /* box-shadow:
+        inset 1px 1px 50px 5px rgba(245, 245, 245, 0.164),
+        inset -1px -1px 50px 50px  rgba(245, 245, 245, 0.164); */
+    word-wrap: break-word;
+    /* background: -webkit-radial-gradient(center, ellipse, yellow,
+            #000000); */
+}
+
+span {
+    position: relative;
+    font: bold 36px Verdana, sans-serif;
+    /* border: 1px solid white; */
     border-radius: 50%;
+    /* animation: volarS 2s linear infinite; */
+    /* filter: drop-shadow(10PX 3PX 10px #ffffff); */
+
 }
 
-.moon span:first-child{
-    border: solid 4px rgba(121, 121, 121, .7);
-    border-right: solid 0px transparent;
-    border-top: solid 0px transparent;
-    left: 20px;
-    top: 50%;
+
+/* .caja span:nth-child(odd) {
+    color: magenta;
+} */
+
+
+
+/* .caja span:hover {
+    transform: scale(5);
+} */
+
+p {
+    color: white;
 }
 
-.moon span:nth-child(2){
-    border: solid 4px rgba(121, 121, 121, .7);
-    border-right: solid 0px transparent;
-    border-top: solid 0px transparent;
-    left: 140px;
-    top: 40px;
-}
-
-.moon span:nth-child(3){
-    width: 60px;
-    height: 60px;
-    border: solid 4px rgba(121, 121, 121, .7);
-    border-right: solid 0px transparent;
-    border-top: solid 0px transparent;
+.valorSp {
+    position: absolute;
+    font: bold 36px verdana, sans-serif;
+    top: 20%;
     left: 50%;
-    top: 50%;
+    color: #9B9220;
+    /* border-radius: 100px; */
+    /* box-shadow:  0px 0px 20px 0px mediumspringgreen; */
+    /* text-shadow: mediumspringgreen  1px 1px 15px;  */
+    /* box-shadow: 0px 0px 90px 10px #9B9220; */
+    transition: .1s;
 }
 
-.moon span:nth-child(4){
-    background: rgba(121, 121, 121, .7);
-    border-right: solid 0px transparent;
-    border-top: solid 0px transparent;
-    left: 30%;
+
+.contenedorInfo {
+    position: absolute;
+    /* border: 2px solid magenta; */
+    width: 15%;
+    height: 50%;
+    left: 84%;
     top: 30%;
 }
 
-.moon span:nth-child(5){
-    width: 30px;
-    height: 30px;
-    border: solid 4px rgba(121, 121, 121, .7);
-    border-right: solid 0px transparent;
-    border-bottom: solid 0px transparent;
+.infoLetras {
+    position: absolute;
+    /* border: 2px solid magenta; */
+    width: 17%;
+    height: 8%;
+    left: 82%;
+    top: 10%;
+
+}
+
+
+.titiuloTamanioParrafo {
+    color: #A37F5E;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 5%;
+    left: 5%;
+    font: bold 16px verdana, sans-serif;
+
+}
+
+.tituloEliminadosSpan {
+    color: #A37F5E;
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 5%;
+    left: 50%;
+    font: bold 16px verdana, sans-serif;
+
+}
+
+.tamanioParrafo {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 35%;
+    left: 15%;
+    color: rgba(220, 20, 60, 0.158);
+    text-shadow: rgba(255, 255, 255, 0.336) 0px 0px 1px;
+    font: bold 36px verdana, sans-serif;
+}
+
+.valorEliminadosSpan {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 35%;
+    left: 65%;
+    color: rgba(220, 20, 60, 0.158);
+    text-shadow: rgba(255, 255, 255, 0.336) 0px 0px 1px;
+    font: bold 36px verdana, sans-serif;
+}
+
+.racha {
+    position: absolute;
+    padding: .8%;
+    text-align: center;
+    font: bold 46px verdana, sans-serif;
+    /* width: 8%; */
+    border-radius: 10px;
+    /* border: 2px solid white; */
+    color: #0FB5AA;
+    top: 15%;
     left: 40%;
-    top: 85%;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.486),
+        inset 0px 0px 30px 10px rgba(241, 214, 214, 0.5);
+    transition: .1s;
+
 }
 
-.moon span:nth-child(6){
-    background: rgba(121, 121, 121, .7);
-    border-right: solid 0px transparent;
-    border-top: solid 0px transparent;
-    left: 70%;
-    top: 25%;
+.tituloRacha {
+    position: absolute;
+    color: #A37F5E;
+    padding: .8%;
+    text-align: center;
+    font: bold 26px verdana, sans-serif;
+    top: 5%;
+    left: 36%;
+
 }
 
-.moon span:nth-child(7){
-    background: rgba(88, 88, 88, .7);
-    border-right: solid 0px transparent;
-    border-top: solid 0px transparent;
-    left: 75%;
-    top: 75%;
+.tituloPrecision {
+    position: absolute;
+    color: #A37F5E;
+    padding: .8%;
+    text-align: center;
+    font: bold 16px verdana, sans-serif;
+    top: 33%;
+    left: 35%;
+
+}
+
+.contenedorPrecision {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    border-radius: 50%;
+    top: 42%;
+    left: 35%;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.486),
+        inset 0px 0px 30px 10px rgba(241, 214, 214, 0.5);
+
+}
+
+.precision {
+    position: relative;
+    top: 40%;
+    text-align: center;
+    padding: .8%;
+    font: bold 16px verdana, sans-serif;
+    /* width: 8%; */
+    /* border: 2px solid white; */
+    color: white;
+    /* box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.486),
+    inset 0px 0px 30px 10px rgba(241, 214, 214, 0.5); */
+
+}
+
+.tituloEquivocacion {
+    position: absolute;
+    color: #A37F5E;
+    padding: .8%;
+    text-align: center;
+    font: bold 16px verdana, sans-serif;
+    top: 70%;
+    left: 30%;
+
+}
+
+.valorEquivocacion {
+    position: absolute;
+    padding: 8%;
+    border-radius: 10px;
+    /* border: 2px solid white; */
+    color: white;
+    top: 80%;
+    left: 40%;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.486),
+        inset 0px 0px 30px 10px rgba(255, 0, 0, 0.5);
+}
+
+
+.contactar {
+    position: absolute;
+    width: 15%;
+    top: 93%;
+    left: 1%;
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    padding: 0%;
+}
+
+.contactar a {
+    text-decoration: none;
+    color: #A37F5E;
+    font-size: 150%;
+    font-family: monospace;
+    margin: 5%;
+}
+
+#canvas {
+    position: absolute;
+    /* background: rgba(255, 255, 255, 0.301); */
+    border-radius: 10px;
+    left: 42.1%;
+    top: 43%;
+    visibility: hidden;
+    /* box-shadow: 10px 10px 50px 5px white; */
+}
+
+#canvasD {
+    position: absolute;
+    /* background: rgba(255, 255, 255, 0.301); */
+    border-radius: 10px;
+    left: 42.1%;
+    top: 43%;
+    visibility: hidden;
+    /* box-shadow: 10px 10px 50px 5px white; */
+}
+
+.puntaje {
+    position: absolute;
+    font: bold 46px verdana, sans-serif;
+    color: #E2715A;
+    top: 10%;
+    left: 1%;
+    /* transition: 2s; */
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.486),
+        inset 165px 0px 30px 10px rgba(163, 127, 94, 0.5);
+    transition: .7s;
+}
+
+.tiempo {
+    position: absolute;
+    font: bold 18px verdana, sans-serif;
+    color: #71ADAB;
+    top: 90%;
+    left: 85%;
+    /* box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.486),
+    inset 165px 0px 30px 10px rgba(163, 127, 94, 0.5); */
+    transition: .7s;
 }
