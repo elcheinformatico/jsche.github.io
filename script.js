@@ -80,7 +80,7 @@ const propiedadAnimacionCirculosNivel1 =
 
 
 }
-
+var audioOk;
 var canvasAnimacion;
 var canvasAnimacionD;
 var elementTiempo;
@@ -102,6 +102,7 @@ function iniciar() {
     elementPuntaje = document.querySelector(".puntaje");
     elementTiempo = document.querySelector(".tiempo");
     var audioMusic = new Audio("ST.mp3");
+    audioOk = new Audio("OK.mp3");
 
 
     abc = document.querySelector(".caja");
@@ -425,7 +426,6 @@ function sonidoOk() {
 
             }
 
-            var audioOk = new Audio("OK.mp3");
             audioOk.volume = .5;
             audioOk.play();
 
