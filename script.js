@@ -88,7 +88,6 @@ var valorTiempo = 0;
 
 
 function iniciar() {
-    var valorR = document.querySelector(".valorR");
     elementEliminadoSpan = document.querySelector(".valorEliminadosSpan");
     letras = document.getElementsByTagName("span");
     valorEquivocacion = document.querySelector(".valorEquivocacion");
@@ -300,7 +299,6 @@ function iniciar() {
 
     bucle = setInterval(() => {
         tamanioParrafo.textContent = totalLetrasParrafo;
-        valorR.textContent = "VALOR QUITAR: " + valorColorFondo;
         elementEliminadoSpan.textContent = valorEliminadosSpan;
 
         if (valorSpan != 0) {
