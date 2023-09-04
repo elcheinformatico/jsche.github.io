@@ -132,15 +132,14 @@ function iniciar() {
         if (evento.key && evento.key != "Backspace" && evento.key != "CapsLock" &&
             evento.key != "Shift" && evento.key != "Dead") {
 
-            if (fv == true) {
-                tiempoJuego();
-                sonidoOk();
-                fv = false;
-                audioMusic.volume = .5;
-                audioMusic.play();
-            }
-
-            if (letras[valorSpan].textContent == evento.key) {
+            if (letras[valorSpan].textContent == evento.key.toUpperCase()) {
+                if (fv == true) {
+                    tiempoJuego();
+                    sonidoOk();
+                    fv = false;
+                    audioMusic.volume = .5;
+                    audioMusic.play();
+                }
                 clearInterval(bucleQuitar);
                 var audioR = new Audio("listo.mp3");
                 audioR.volume = .2;
@@ -238,15 +237,7 @@ function iniciar() {
                 rachaNumero = 0;
             }
 
-        } else if (evento.key == "Backspace") {
-            if (letras.length > 0) {
-                letras[letras.length - 1].animate(animacionKeyframeCirculosIzquierdos, propiedadAnimacionCirculosNivel1);
-                setTimeout(() => {
-                    abc.removeChild(abc.lastChild);
-                }, 10)
-            }
         }
-
 
     });
 
